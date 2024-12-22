@@ -1,16 +1,20 @@
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();  // Prevent the default form submission
 
+  // Log to confirm form submission attempt
+  console.log('Form submission attempted');
+
   // Create a FormData object from the form
   const formData = new FormData(this);
 
   // Send form data to Formspree using Fetch API
   fetch('https://formspree.io/f/mdkkoolb', {
     method: 'POST',
-    body: formData
+    body: formData,
+    redirect: 'follow' // Ensure redirects are followed
   })
   .then(response => {
-    console.log('Formspree Response:', response);  // Log the response object for debugging
+    console.log('Response from Formspree:', response); // Log the entire response object
 
     // Check if the response is successful (200 or 303 status)
     if (response.status === 200 || response.status === 303) {
