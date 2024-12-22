@@ -10,7 +10,9 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     body: formData
   })
   .then(response => {
-    // Check if the response status is successful
+    console.log('Formspree Response:', response);  // Log the response object for debugging
+
+    // Check if the response is successful (200 or 303 status)
     if (response.status === 200 || response.status === 303) {
       // Form submission was successful, show the thank you message
       alert('Thank you for your message, I will get back to you soon!');
