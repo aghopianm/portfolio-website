@@ -10,18 +10,19 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     body: formData
   })
   .then(response => {
-    if (response.ok || response.status === 303) {
-      // Show the thank you message if the form was successfully submitted
+    // Check if the response status is successful
+    if (response.status === 200 || response.status === 303) {
+      // Form submission was successful, show the thank you message
       alert('Thank you for your message, I will get back to you soon!');
       this.reset();  // Reset the form
     } else {
-      // Show an error message if submission fails
+      // Log the response and show the error message if submission fails
       console.error('Form submission failed:', response);
       alert('Oops! Something went wrong. Please try again.');
     }
   })
   .catch(error => {
-    // Show an error message if there's an issue with the request
+    // Log and show an error message if there's an issue with the request
     console.error('Error in submission:', error);
     alert('Oops! Something went wrong. Please try again.');
   });
