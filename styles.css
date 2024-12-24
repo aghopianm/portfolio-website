@@ -101,6 +101,27 @@ h2 {
   margin-top: 0;
 }
 
+/* CV Section */
+#cv {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#cv a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #0078D4;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#cv a:hover {
+  background-color: #005fa3;
+}
+
 /* Forms */
 form {
   max-width: 400px;
