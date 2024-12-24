@@ -23,6 +23,25 @@ body {
     font-size: 1.2rem;
     color: #666;
   }
+
+  /* Header Layout */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Space between image and text */
+  text-align: left; /* Ensures the text aligns properly */
+}
+
+.header-content img {
+  width: 150px; /* Size of the photo */
+  height: 150px;
+  border-radius: 50%; /* Circular photo */
+}
+
+.header-text {
+  max-width: 500px; /* Limit text width for a cleaner look */
+}
   
   /* Navigation */
   nav {
