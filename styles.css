@@ -1,127 +1,107 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
-  
-  header {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f4f4f4;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    color: #222;
-  }
-  
-  header p {
-    font-size: 1.2rem;
-    color: #666;
-  }
-
-  /* Header Layout */
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem; /* Space between image and text */
-  text-align: left; /* Ensures the text aligns properly */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-.header-content img {
-  width: 150px; /* Size of the photo */
-  height: 150px;
-  border-radius: 50%; /* Circular photo */
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
 }
 
-.header-text {
-  max-width: 500px; /* Limit text width for a cleaner look */
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #222;
 }
-  
-  /* Navigation */
-  nav {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-size: 1rem;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Sections */
-  main {
-    padding: 1rem;
-  }
-  
-  section {
-    margin-bottom: 2rem;
-  }
-  
-  h2 {
-    color: #444;
-  }
-  
-  .project {
-    background-color: #f9f9f9;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .project h3 {
-    margin-top: 0;
-  }
-  
-  form {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-  }
-  
-  form input, form textarea, form button {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  form button {
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #555;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #f4f4f4;
-    color: #666;
-  }
-  
+
+header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #444;
+}
+
+.project {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  color: #666;
+}
