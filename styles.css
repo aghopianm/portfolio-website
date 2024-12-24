@@ -36,9 +36,10 @@ header p {
 }
 
 .header-content img {
-  width: 150px; /* Size of the photo */
-  height: 150px;
+  width: 100px; /* Smaller size of the photo */
+  height: 100px;
   border-radius: 50%; /* Circular photo */
+  object-fit: cover; /* Ensures the image fits well */
 }
 
 .header-text {
