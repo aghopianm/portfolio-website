@@ -7,6 +7,7 @@ body {
   color: #333;
 }
 
+
 /* Header */
 header {
   text-align: center;
@@ -44,6 +45,32 @@ header p {
 
 .header-text {
   max-width: 500px; /* Limit text width for a cleaner look */
+}
+
+.linkedin-header {
+  margin-top: 20px;
+  text-align: center; /* Center the button horizontally */
+}
+
+.linkedin-header button {
+  background-color: #0077b5; /* LinkedIn blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Add a hover effect */
+}
+
+.linkedin-header button:hover {
+  background-color: #005582; /* Darker LinkedIn blue for hover */
+}
+
+.linkedin-header a {
+  text-decoration: none; /* Remove underline from the link */
 }
 
 /* Navigation */
