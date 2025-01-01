@@ -5,6 +5,12 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+  
+  /* Add background image */
+  background-image: url('background-image.jpg'); /* Adjust path if necessary */
+  background-size: cover; /* Ensure it covers the whole page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
 }
 
 
