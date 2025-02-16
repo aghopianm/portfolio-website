@@ -1,0 +1,7 @@
+      <section id="cv">
+        <h2>Download My CV</h2>
+        <p>If you'd like to download my CV, click the link below:</p>
+        <a href="Minas_Aghopian.pdf" download="Minas_Aghopian_CV.pdf"
+          >Download My CV</a
+        >
+      </section>

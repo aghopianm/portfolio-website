@@ -4,122 +4,95 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #fefefe;
 }
+body, main {
+  background-color: #000000;
+}
+
 
 /* Header */
 header {
   text-align: center;
-  padding: 2rem;
-  background-color: #000000; /* Primary Blue */
+  padding: 1rem;
+  background-color: #000000;
   color: white;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: white;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
 }
 
 /* Header Layout */
 .header-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 1rem; /* Space between image and text */
-  text-align: left; /* Ensures the text aligns properly */
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
 }
 
 .header-content img {
-  width: 100px; /* Smaller size of the photo */
+  width: 100px;
   height: 100px;
-  border-radius: 50%; /* Circular photo */
-  object-fit: cover; /* Ensures the image fits well */
-  max-width: 100;
-}
-
-.header-text {
-  max-width: 500px; /* Limit text width for a cleaner look */
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .linkedin-header {
-  margin-top: 20px;
-  text-align: center; /* Center the button horizontally */
+  margin: 1rem 0;
 }
 
 .linkedin-header button {
-  background-color: #0077b5; /* LinkedIn blue */
-  display: inline-block;
+  background-color: #0077b5;
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 12px 24px;
+  font-size: 1rem;
   cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: background-color 0.3s ease; /* Add a hover effect */
-}
-
-.linkedin-header button:hover {
-  background-color: #005582; /* Darker LinkedIn blue for hover */
-}
-
-.linkedin-header a {
-  text-decoration: none; /* Remove underline from the link */
+  transition: background-color 0.3s ease;
 }
 
 /* Navigation */
 nav {
-  background-color: #000000; /* Dark Gray */
-  color: white;
-  text-align: center;
+  background-color: #000000;
   padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 1rem;
-  font-size: 1rem;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  color: #00ADB5; /* Teal */
+  padding: 0.5rem 1rem;
 }
 
 /* Sections */
 main {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 section {
   margin-bottom: 2rem;
-}
-
-section:nth-child(odd) {
-  background-color: #F4F4F4; /* Light Gray */
-}
-
-section:nth-child(even) {
-  background-color: white;
-}
-
-h2 {
-  color: #444;
+  padding: 2rem 1rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 /* CV Section */
 #cv {
-  margin-top: 2rem;
-  padding: 2rem;
-  background-color: #f4f4f4;
   text-align: center;
 }
 
@@ -130,15 +103,13 @@ h2 {
   color: white;
   text-decoration: none;
   border-radius: 5px;
-}
-
-#cv a:hover {
-  background-color: #005fa3;
+  transition: background-color 0.3s ease;
 }
 
 /* Forms */
 form {
-  max-width: 400px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -148,29 +119,50 @@ form label {
   font-weight: bold;
 }
 
-form input, form textarea, form button {
+form input,
+form textarea,
+form button {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.75rem;
   margin-bottom: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
 form button {
-  background-color: #00ADB5; /* Teal */
+  background-color: #00ADB5;
   color: white;
-  border: none;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #0078D4; /* Darker Blue */
+  font-weight: bold;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #f4f4f4;
-  color: #666;
+  padding: 2rem 1rem;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Mobile Responsive */
+@media (min-width: 768px) {
+  .header-content {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  nav {
+    flex-wrap: nowrap;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+  }
 }
