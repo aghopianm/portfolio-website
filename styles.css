@@ -7,12 +7,11 @@ body {
   color: #333;
 }
 
-
 /* Header */
 header {
   text-align: center;
   padding: 2rem;
-  background-color: #4f4f4f; /* Primary Blue */
+  background-color: #000000; /* Primary Blue */
   color: white;
 }
 
@@ -41,6 +40,7 @@ header p {
   height: 100px;
   border-radius: 50%; /* Circular photo */
   object-fit: cover; /* Ensures the image fits well */
+  max-width: 100;
 }
 
 .header-text {
@@ -54,6 +54,7 @@ header p {
 
 .linkedin-header button {
   background-color: #0077b5; /* LinkedIn blue */
+  display: inline-block;
   color: white;
   border: none;
   border-radius: 5px;
@@ -75,7 +76,7 @@ header p {
 
 /* Navigation */
 nav {
-  background-color: #333; /* Dark Gray */
+  background-color: #000000; /* Dark Gray */
   color: white;
   text-align: center;
   padding: 1rem 0;
@@ -95,7 +96,7 @@ nav a:hover {
 
 /* Sections */
 main {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 section {
@@ -112,20 +113,6 @@ section:nth-child(even) {
 
 h2 {
   color: #444;
-}
-
-/* Projects */
-.project {
-  background-color: #F9F9F9; /* Neutral Background */
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #0078D4; /* Accent Blue Border */
-}
-
-.project h3 {
-  margin-top: 0;
 }
 
 /* CV Section */
