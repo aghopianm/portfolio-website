@@ -1,96 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me - Minas Aghopian</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <div class="header-content">
-      <img src="my_photo.jpeg" alt="Photo of Minas Aghopian">
-      <div class="header-text">
-        <h1>Minas Aghopian</h1>
-        <p>Software Engineering Co-Op (Intern) & MS Computer Science Student</p>
-      </div>
-    </div>
-  
-    <!-- LinkedIn Section in Header -->
-    <div class="linkedin-header">
-      <a href="https://www.linkedin.com/in/minas-aghopian-571636350/" target="_blank">
-        <button>Connect with Me on LinkedIn</button>
-      </a>
-    </div>
-  </header>
-  
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#cv">CV</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm Minas, an aspiring software engineer and MS Computer Science student. I'm passionate about creating projects to learn, have fun and try to add value to the world. Moreover, I am learning C and C++ to understand how things work under the hood, with an end goal of developing my own OS.</p>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project 1: Social Media App</h3>
-        <p>Currently developing a social media platform that will enable users to connect with friends and family, share photos, and post updates.
-          <a href="https://socionetwork.netlify.app/" target="_blank">View on my server</a>
-        </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Minas Aghopian</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img src="my_photo.jpeg" alt="Photo of Minas Aghopian" />
+        <div class="header-text">
+          <h1>Minas Aghopian</h1>
+          <p>
+            Software Engineering Co-Op (Intern) & MS Computer Science Student
+          </p>
+        </div>
       </div>
 
-      <div class="project">
-        <h3>Project 2: Python to C Compiler</h3>
-        <p>Work in progress: Creating a Python to C compiler
-          <a href="https://github.com/aghopianm/C-Compiler" target="_blank">View on GitHub</a>
-        </p>
+      <!-- LinkedIn Section in Header -->
+      <div class="linkedin-header">
+        <a
+          href="https://www.linkedin.com/in/minas-aghopian-571636350/"
+          target="_blank"
+        >
+          <button>Connect with Me on LinkedIn</button>
+        </a>
       </div>
+    </header>
 
-      <div class="project">
-        <h3>Project 3: AI child mortality rate predicter</h3>
-        <p>Trained and tested a neural network model to predict children's mortality rates with up to 96% accuracy based on nutritional features. 
-          <a href="https://github.com/aghopianm/Child-Mortality-AI-" target="_blank">View on GitHub</a>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hello everyone, I am Minas, a Software Engineering Co-Op and Master's
+          Computer Science student based in London. My background prior to moving into Engineering
+          was in sales, and I am therefore really passionate about helping
+          other people on their journey into Tech. I'm currently working on a
+          fitness app, as fitness is one of my main hobbies.
         </p>
-      </div>
-      
-      <div class="project">
-        <h3>Project 4: Data Science/Analysis Tool</h3>
-        <p>A Python-based tool for analysing Computer Science student data. 
-          <a href="https://github.com/aghopianm/DataScience-ComputerScienceStudents" target="_blank">View on GitHub</a>
-        </p>
-      </div>
-      <div class="project">
-        <h3>Project 5: Slack Archiver</h3>
-        <p>Slack tool that works around Slack's free user messaging limit, archiving old messages to preserve data for non-paid users: I integrated this at work. 
-          <a href="https://github.com/aghopianm/Slack-Archiver-2.0" target="_blank">View on GitHub</a>
-        </p>
-      </div>
-    </section>
-    <section id="cv">
-      <h2>Download My CV</h2>
-      <p>If you'd like to download my CV, click the link below:</p>
-      <a href="Minas_Aghopian.pdf" download="Minas_Aghopian_CV.pdf">Download My CV</a>
-    </section>
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form id="contactForm" action="https://formspree.io/f/mdkkoolb" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit">Send</button>
-      </form>            
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Minas Aghopian</p>
+      </section>
+      <section id="cv">
+        <h2>Download My CV</h2>
+        <p>If you'd like to download my CV, click the link below:</p>
+        <a href="Minas_Aghopian.pdf" download="Minas_Aghopian_CV.pdf"
+          >Download My CV</a
+        >
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form
+          id="contactForm"
+          action="https://formspree.io/f/mdkkoolb"
+          method="POST"
+        >
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; <span id="year"></span> Minas Aghopian</p>
   </footer>
-</body>
+  
+  <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+  </script>  
+  </body>
 </html>
