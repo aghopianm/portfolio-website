@@ -5,11 +5,8 @@ body {
   margin: 0;
   padding: 0;
   color: #fefefe;
-}
-body, main {
   background-color: #000000;
 }
-
 
 /* Header */
 header {
@@ -47,66 +44,53 @@ header p {
   object-fit: cover;
 }
 
-.linkedin-header {
-  margin: 1rem 0;
-}
-
-.linkedin-header button {
-  background-color: #0077b5;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 12px 24px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* Navigation */
-nav {
-  background-color: #000000;
-  padding: 1rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
-
-/* Sections */
+/* Main Content */
 main {
   padding: 1rem;
 }
 
+/* Sections */
 section {
-  margin-bottom: 2rem;
-  padding: 2rem 1rem;
+  margin-bottom: 1.5rem; /* Reduce space between sections */
+  padding: 1.5rem 1rem;  /* Reduce padding inside sections */
   background-color: rgb(0, 0, 0);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* CV Section */
-#cv {
-  text-align: center;
+/* About Section */
+#about {
+  margin-bottom: 1rem; /* Reduce space */
 }
 
-#cv a {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #0078D4;
-  color: white;
+/* Links Section */
+#links {
+  margin-top: 0.5rem; /* Reduce space */
+}
+
+#links ul {
+  list-style-type: disc;
+  padding: 0;
+  text-align: left;
+}
+
+#links li {
+  margin-bottom: 0.5rem; /* Reduce space between links */
+}
+
+/* Links Styling */
+#links a {
+  color: #00BFFF; /* Light blue color */
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-/* Forms */
+#links a:hover {
+  color: #ffffff; /* White on hover */
+}
+
+/* Contact Form */
 form {
   width: 100%;
   max-width: 500px;
@@ -135,6 +119,13 @@ form button {
   background-color: #00ADB5;
   color: white;
   font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #008b8b;
 }
 
 /* Footer */
@@ -153,16 +144,7 @@ footer {
     text-align: left;
   }
 
-  nav {
-    flex-wrap: nowrap;
-  }
-
   main {
     padding: 2rem;
-  }
-
-  section {
-    padding: 2rem;
-    margin-bottom: 2.5rem;
   }
 }
