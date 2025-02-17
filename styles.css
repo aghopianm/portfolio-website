@@ -49,45 +49,42 @@ main {
   padding: 1rem;
 }
 
-/* Sections */
+/* Sections - Reduced spacing */
 section {
-  margin-bottom: 1.5rem; /* Reduce space between sections */
-  padding: 1.5rem 1rem;  /* Reduce padding inside sections */
+  margin-bottom: 0.5rem; /* Significantly reduced from 1.5rem */
+  padding: 1rem; /* Reduced from 1.5rem 1rem */
   background-color: rgb(0, 0, 0);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* About Section */
-#about {
-  margin-bottom: 1rem; /* Reduce space */
+/* Remove any additional margins */
+#about, #links, #contact {
+  margin: 0;
 }
 
 /* Links Section */
-#links {
-  margin-top: 0.5rem; /* Reduce space */
-}
-
 #links ul {
   list-style-type: disc;
-  padding: 0;
   text-align: left;
+  padding-left: 1.5rem; /* Add some indent for the bullets */
+  margin: 0; /* Remove default list margin */
 }
 
 #links li {
-  margin-bottom: 0.5rem; /* Reduce space between links */
+  margin-bottom: 0.5rem;
 }
 
 /* Links Styling */
 #links a {
-  color: #00BFFF; /* Light blue color */
+  color: #00BFFF;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 #links a:hover {
-  color: #ffffff; /* White on hover */
+  color: #ffffff;
 }
 
 /* Contact Form */
@@ -99,7 +96,7 @@ form {
 
 form label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem; /* Reduced from 0.5rem */
   font-weight: bold;
 }
 
@@ -108,7 +105,7 @@ form textarea,
 form button {
   width: 100%;
   padding: 0.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem; /* Reduced from 1rem */
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 1rem;
@@ -131,7 +128,7 @@ form button:hover {
 /* Footer */
 footer {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem; /* Reduced from 2rem 1rem */
   background-color: #000000;
   color: #ffffff;
 }
@@ -145,6 +142,6 @@ footer {
   }
 
   main {
-    padding: 2rem;
+    padding: 1.5rem; /* Reduced from 2rem */
   }
 }
