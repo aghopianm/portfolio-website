@@ -4,7 +4,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  color: #fefefe;
+  color: #1FC742;
   background-color: #000000;
 }
 
@@ -19,12 +19,12 @@ header {
 header h1 {
   margin: 0;
   font-size: 2rem;
-  color: white;
+  color: #8000FF;
 }
 
 header p {
   font-size: 1rem;
-  color: white;
+  color: #8000FF
 }
 
 /* Header Layout */
@@ -77,7 +77,7 @@ section {
 
 /* Links Styling */
 #links a {
-  color: #00BFFF;
+  color: #8000FF;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
@@ -113,7 +113,7 @@ form button {
 }
 
 form button {
-  background-color: #00ADB5;
+  background-color: #1FC742;
   color: white;
   font-weight: bold;
   border: none;
@@ -121,16 +121,13 @@ form button {
   transition: background-color 0.3s ease;
 }
 
-form button:hover {
-  background-color: #008b8b;
-}
 
 /* Footer */
 footer {
   text-align: center;
   padding: 1rem; /* Reduced from 2rem 1rem */
   background-color: #000000;
-  color: #ffffff;
+  color: #1FC742;
 }
 
 /* Mobile Responsive */
